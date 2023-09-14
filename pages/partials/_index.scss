@@ -1,0 +1,92 @@
+.inicio {font-family: 'Alkatra', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;}
+
+
+.inicio {
+    background-color: orangered;
+    min-height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "logo logo equipos nosotros"
+    "logo logo ultimasnoticias contacto";
+    gap: 1rem;
+
+}
+
+@media screen and (max-width: 500px) {
+
+.inicio {
+   
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas:
+    "logo"
+    "equipos"
+    "nosotros"
+    "contacto"
+    "ultimasnoticias";
+    }
+  }
+  
+
+
+.inicio a {
+    text-decoration: none;
+}
+
+.logo {background-color: black;
+    grid-area: logo;
+    color: orangered ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+    text-align: center;
+}
+
+.deportes {background-color: orangered;
+    grid-area: equipos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.nosotros {background-color: black;
+grid-area: nosotros;
+color: orangered;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.planteles {background-color: black;
+grid-area: ultimasnoticias;
+color: orangered;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.contacto {background-color: orangered;
+grid-area: contacto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+

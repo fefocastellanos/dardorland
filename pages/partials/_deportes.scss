@@ -1,0 +1,48 @@
+.todoDardo {
+    background-image: url(/assets/img/Dardo\ Nosotros.jpeg); 
+    height: 70vh;
+    display : block;
+    Margin : 0 auto;
+    width: 100%;
+    
+}
+
+.dardorland {
+    background-image: url(/assets/img/campeones\ \(2\).jpeg); 
+    height: 70vh;
+    display : block;
+    Margin : 0 auto;
+    width: 100%;
+    
+}
+
+.card {
+-webkit-animation: flip-in-diag-2-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+animation: flip-in-diag-2-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes flip-in-diag-2-br {
+    0% {
+      -webkit-transform: rotate3d(-1, 1, 0, -80deg);
+              transform: rotate3d(-1, 1, 0, -80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate3d(1, 1, 0, 0deg);
+              transform: rotate3d(1, 1, 0, 0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes flip-in-diag-2-br {
+    0% {
+      -webkit-transform: rotate3d(-1, 1, 0, -80deg);
+              transform: rotate3d(-1, 1, 0, -80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate3d(1, 1, 0, 0deg);
+              transform: rotate3d(1, 1, 0, 0deg);
+      opacity: 1;
+    }
+  }
+  
